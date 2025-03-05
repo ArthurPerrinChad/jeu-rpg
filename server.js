@@ -22,3 +22,6 @@ process.on("SIGTERM", () => {
 process.on("uncaughtException", (err) => {
     console.error("Erreur non capturée :", err);
 });
+setInterval(() => {
+    console.log("Le serveur est toujours actif...");
+}, 10000); // Envoie un message toutes les 10 secondes
